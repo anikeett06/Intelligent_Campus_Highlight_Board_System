@@ -1,0 +1,13 @@
+# Relaxes OpenSSL 3 cipher policy so Python 3.13 on Windows can complete TLS to MongoDB Atlas
+# when the stack otherwise fails with tlsv1 alert internal error.
+# Use only for local dev: set OPENSSL_CONF to this file's full path before starting uvicorn.
+openssl_conf = openssl_init
+
+[openssl_init]
+ssl_conf = ssl_sect
+
+[ssl_sect]
+system_default = system_default_sect
+
+[system_default_sect]
+CipherString = DEFAULT@SECLEVEL=1

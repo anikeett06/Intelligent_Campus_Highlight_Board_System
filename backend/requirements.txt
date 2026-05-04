@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pymongo>=4.8
+certifi
+dnspython
+pydantic-settings
+email-validator
+python-jose[cryptography]
+passlib
+python-multipart
+firebase-admin
+pypdfium2
+Pillow

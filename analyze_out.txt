@@ -1,0 +1,19 @@
+﻿Analyzing 4 items...                                            
+
+   info - Use interpolation to compose strings and values - lib\screens\admin\admin_event_editor_screen.dart:691:15 - prefer_interpolation_to_compose_strings
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\admin\admin_event_editor_screen.dart:724:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\admin\admin_event_editor_screen.dart:725:15 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\admin\admin_event_editor_screen.dart:731:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\admin\admin_event_editor_screen.dart:732:15 - deprecated_member_use
+   info - 'groupValue' is deprecated and shouldn't be used. Use a RadioGroup ancestor to manage group value instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\admin\admin_event_editor_screen.dart:773:15 - deprecated_member_use
+   info - 'onChanged' is deprecated and shouldn't be used. Use RadioGroup to handle value change instead. This feature was deprecated after v3.32.0-0.0.pre - lib\screens\admin\admin_event_editor_screen.dart:774:15 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\screens\events\event_detail_screen.dart:484:70 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\screens\events\event_detail_screen.dart:484:74 - unnecessary_underscores
+
+flutter : 9 issues found. (ran in 2.6s)
+At C:\Users\anike\AppData\Local\Temp\ps-script-62fdeaf4-ffc9-43e9-833b-6968403f8541.ps1:78 char:1
++ flutter analyze lib/screens/events/event_detail_screen.dart lib/scree ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (9 issues found. (ran in 2.6s):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

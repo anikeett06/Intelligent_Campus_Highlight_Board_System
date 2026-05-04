@@ -1,0 +1,38 @@
+{
+  "info": {
+    "name": "Campus Highlight Board API",
+    "_postman_id": "9c13db65-df6c-4cc0-8d2a-6fa66bbf1111",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth Login",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\"email\":\"student@campus.edu\",\"password\":\"Student@123\"}"},
+        "url": {"raw": "{{baseUrl}}/auth/login", "host": ["{{baseUrl}}"], "path": ["auth", "login"]}
+      }
+    },
+    {
+      "name": "Events List",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+        "url": {"raw": "{{baseUrl}}/events/", "host": ["{{baseUrl}}"], "path": ["events", ""]}
+      }
+    },
+    {
+      "name": "Dashboard Grouped",
+      "request": {
+        "method": "GET",
+        "header": [{"key": "Authorization", "value": "Bearer {{token}}"}],
+        "url": {"raw": "{{baseUrl}}/events/dashboard/grouped", "host": ["{{baseUrl}}"], "path": ["events", "dashboard", "grouped"]}
+      }
+    }
+  ],
+  "variable": [
+    {"key": "baseUrl", "value": "http://127.0.0.1:8000/api/v1"},
+    {"key": "token", "value": ""}
+  ]
+}

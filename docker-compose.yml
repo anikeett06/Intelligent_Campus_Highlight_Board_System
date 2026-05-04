@@ -1,0 +1,15 @@
+# Local MongoDB for campus_board API (default URI: mongodb://127.0.0.1:27017)
+# From repo root: docker compose up -d
+# Then start uvicorn from backend/ as usual.
+
+services:
+  mongodb:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - campus_board_mongo:/data/db
+
+volumes:
+  campus_board_mongo:
